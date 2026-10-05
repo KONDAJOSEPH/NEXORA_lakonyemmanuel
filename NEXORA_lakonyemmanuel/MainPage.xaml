@@ -1,0 +1,188 @@
+﻿<Page
+    x:Class="NEXORA_lakonyemmanuel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NEXORA_lakonyemmanuel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="55*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0"
+              Background="#0B1930">
+
+            <StackPanel Margin="50,40,50,40">
+
+                <StackPanel Orientation="Horizontal">
+
+                    <Border
+                        Background="#E3BB5F"
+                        Width="45"
+                        Height="45"
+                        CornerRadius="5">
+
+                        <TextBlock
+                            Text="N"
+                            FontSize="24"
+                            FontWeight="Bold"
+                            Foreground="White"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+
+                    </Border>
+
+                    <TextBlock
+                        Text="NEXORA"
+                        FontSize="30"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        VerticalAlignment="Center"
+                        Margin="15,0,0,0"/>
+
+                </StackPanel>
+
+                <StackPanel Margin="0,180,0,0">
+
+                    <TextBlock
+                        Text="Shop Smarter."
+                        FontSize="50"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        TextWrapping="Wrap"/>
+
+                    <TextBlock
+                        Text="Your online store for electronics and smart devices"
+                        FontSize="18"
+                        Foreground="White"
+                        TextWrapping="Wrap"
+                        Margin="0,15,0,30"/>
+
+                    <TextBlock
+                        Text=" Quality products"
+                        FontSize="18"
+                        Foreground="White"
+                        Margin="0,8,0,8"/>
+
+                    <TextBlock
+                        Text=" Secure shopping"
+                        FontSize="18"
+                        Foreground="White"
+                        Margin="0,8,0,8"/>
+
+                </StackPanel>
+
+            </StackPanel>
+
+        </Grid>
+
+        <Grid Grid.Column="1"
+              Background="White">
+
+            <StackPanel
+                Width="500"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+
+                <TextBlock
+                    Text="Welcome back"
+                    FontSize="30"
+                    FontWeight="Bold"
+                    Foreground="#0B1930"/>
+
+                <TextBlock
+                    Text="Sign in to your account"
+                    FontSize="18"
+                    Foreground="CadetBlue"
+                    Margin="0,5,0,25"/>
+
+                <TextBox
+                    x:Name="txtusername"
+                    FontSize="18"
+                    Header="Username"
+                    PlaceholderText="Enter username"
+                    Margin="0,0,0,15"/>
+
+                <PasswordBox
+                    x:Name="txtpassword"
+                    FontSize="18"
+                    Header="Password"
+                    PlaceholderText="Enter password"
+                    Margin="0,0,0,10"/>
+
+                <CheckBox
+                    x:Name="txtcheck"
+                    Content="Remember me"
+                    Margin="0,5,0,15"/>
+
+                <Button
+                    x:Name="btnsignin"
+                    Content="SIGN IN"
+                    Click="btnsignin_Click"
+                    Background="#CC9C2D"
+                    Foreground="White"
+                    CornerRadius="4"
+                    Height="45"
+                    HorizontalAlignment="Left"
+                    HorizontalContentAlignment="Center"
+                    Margin="0,5,0,20"/>
+
+                <Grid Margin="0,5,0,15">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Rectangle
+                        Grid.Column="0"
+                        Height="1"
+                        Fill="LightGray"
+                        VerticalAlignment="Center"/>
+
+                    <TextBlock
+                        Grid.Column="1"
+                        Text="OR"
+                        Foreground="CadetBlue"
+                        Margin="15,0,15,0"/>
+
+                    <Rectangle
+                        Grid.Column="2"
+                        Height="1"
+                        Fill="LightGray"
+                        VerticalAlignment="Center"/>
+
+                </Grid>
+
+                <Button
+                    x:Name="btncreateaccount"
+                    Content="CREATE ACCOUNT"
+                    Click="btncreateaccount_Click"
+                    Background="Transparent"
+                    Foreground="#0B1930"
+                    BorderBrush="#0B1930"
+                    BorderThickness="1"
+                    Height="45"
+                    HorizontalAlignment="Left"
+                    HorizontalContentAlignment="Center"
+                    Margin="0,5,0,25"/>
+
+                <TextBlock
+                    Text="NEXORA.Online Electronics Store"
+                    Foreground="CadetBlue"
+                    HorizontalAlignment="Center"/>
+
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+
+</Page>
